@@ -244,7 +244,7 @@ you know(fetch API, Axios, jquery ajax,...)
 ```def
   axios
   .put(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/random/1`, {
-    price:"44"
+    price:"44",
     description : 'Lorem Lorem Ipsum is simply dummy text of the printing and'
   })
   .then(({ data }) => {
@@ -279,8 +279,8 @@ you know(fetch API, Axios, jquery ajax,...)
 ```def
   axios
   .put(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/electronics/1`,  {
-    price:"44
-    description : Lorem Lorem Ipsum is simply dummy text of the printing and'
+    price:"44",
+    description : 'Lorem Lorem Ipsum is simply dummy text of the printing and'
   })
   .then(({ data }) => {
     console.log(data);
