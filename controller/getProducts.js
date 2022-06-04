@@ -5,6 +5,7 @@ let products = [];
 
 const newspapers = [
   {
+
     Electronics: (language = "en") => {
       return `https://www.amazon.eg/-/${language}/Electronics/b/?ie=UTF8&node=18018102031&ref_=nav_cs_electronics`;
     },
@@ -61,7 +62,7 @@ exports.categoryData = async (req, res) => {
       });
     });
 
-    res.send(products);
+    res.status(200).json({products});
   } catch (error) {
     console.log(error);
   }
@@ -102,7 +103,7 @@ exports.categoryDataById = async (req, res) => {
     if (productsById.length === 0)
      res.status(404).json({ status: "error", msg: "no such category" });
 
-    res.send(productsById);
+    res.status(200).json({productsById});
   } catch (error) {
     console.log(error);
   }
@@ -140,7 +141,7 @@ exports.random = async (req, res) => {
         price,
       });
     });
-    res.send(products);
+  res.status(200).json({products});
   } catch (error) {
     console.log(error);
   }
@@ -181,8 +182,9 @@ exports.randomById = async (req, res) => {
      res.status(404).json({ status: "error", msg: "no such category" });
 
       return;
+      
     }
-    res.send(productsById);
+    res.status(200).json({productsById});
   } catch (error) {
     console.log(error);
   }

@@ -71,7 +71,7 @@ exports.deleteCategoryById = async (req, res) => {
         return;
       }
   
-     res.status(404).json({
+     res.status(200).json({
         status: "deleted successfully",
         deletedItem,
         productsData: newProducts,
@@ -124,7 +124,7 @@ exports.deleteCategoryById = async (req, res) => {
         return;
       }
   
-     res.status(404).json({
+     res.status(200).json({
         status: "deleted successfully",
         deletedItem,
         productsData: newProducts,

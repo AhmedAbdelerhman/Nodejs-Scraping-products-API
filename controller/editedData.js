@@ -85,8 +85,8 @@ exports.editCategoryById = async (req, res) => {
       return;
     }
 
-    res.status(404).json({
-      status: "deleted successfully",
+    res.status(200).json({
+      status: "updated successfully",
       editedItem,
       productsData: newProducts,
     });
@@ -151,9 +151,9 @@ exports.editRandomById = async (req, res) => {
       return;
     }
 
-    res.status(404).json({
+    res.status(200).json({
       status: "edited successfully",
-      deletedItem,
+      editedItem,
       productsData: newProducts,
     });
   } catch (error) {
