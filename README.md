@@ -24,7 +24,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 #### 1- get random products by language
 
-`````http
+`````def
    axios
   .get(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/random`)
   .then(({ data }) => {
@@ -43,7 +43,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 #### Example 
 
-`````http
+`````def
     axios
   .get(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/random`)
   .then(({ data }) => {
@@ -57,7 +57,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ####  2- get random products by language and category
 
-```http
+```def
     axios
   .get(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/${category}`)
   .then(({ data }) => {
@@ -77,7 +77,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 #### Example
 
-```http
+```def
    axios
   .get(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/electronics`)
   .then(({ data }) => {
@@ -91,7 +91,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 #### 3- get random product id
 
-```http
+```def
     axios
   .get(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/random/${id}`)
   .then(({ data }) => {
@@ -108,7 +108,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 #### Example
 
-```http
+```def
    axios
   .get(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/random/1`)
   .then(({ data }) => {
@@ -123,7 +123,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 #### 4- get category product id
 
-```http
+```def
     axios
   .get(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/${category}/${id}`)
   .then(({ data }) => {
@@ -140,7 +140,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 #### Example
 
-```http
+```def
    axios
   .get(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/electronics/1`)
   .then(({ data }) => {
@@ -150,5 +150,139 @@ you know(fetch API, Axios, jquery ajax,...)
     console.log(err);
   });
 ```
+
 #
 ### delete
+#### Note it will not delete from database but return the deleted product and the list without that product
+
+#### 1- delete random product id
+
+```def
+    axios
+  .delete(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/random/${id}`)
+  .then(({ data }) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+```
+
+| Parameter | value     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      |   `1` | It will respnse with product id =1|
+
+#### Example
+
+```def
+   axios
+  .delete(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/random/1`)
+  .then(({ data }) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+```
+
+
+
+#### 2- delete category product id
+
+```def
+    axios
+  .delete(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/${category}/${id}`)
+  .then(({ data }) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+```
+
+| Parameter | value     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      |   `1` | It will respnse with product id =1|
+
+#### Example
+
+```def
+   axios
+  .delete(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/electronics/1`)
+  .then(({ data }) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+```
+
+#
+### update
+#### Note it will not update from database but return the updated product and the list with updated product
+
+#### 1- update random product id
+
+```def
+    axios
+  .put(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/random/${id}`)
+  .then(({ data }) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+```
+
+| Parameter | value     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      |   `1` | It will respnse with product id =1|
+
+#### Example
+
+```def
+   axios
+  .put(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/random/1`)
+  .then(({ data }) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+```
+
+
+
+#### 2- update category product id
+
+```def
+    axios
+  .put(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/${category}/${id}`)
+  .then(({ data }) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+```
+
+| Parameter | value     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      |   `1` | It will respnse with product id =1|
+
+#### Example
+
+```def
+   axios
+  .put(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/electronics/1`)
+  .then(({ data }) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+```
+
+
+
+
