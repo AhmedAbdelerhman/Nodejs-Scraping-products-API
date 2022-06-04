@@ -225,13 +225,14 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ```def
     axios
-  .put(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/random/${id}`)
+  .put(tps://fake-products-dynamic-api.herokuapp.com/api/${language}/products/random/${id}`, {body})
   .then(({ data }) => {
     console.log(data);
   })
   .catch((err) => {
     console.log(err);
-  });
+  });      
+
 ```
 
 | Parameter | value     | Description                       |
@@ -241,8 +242,11 @@ you know(fetch API, Axios, jquery ajax,...)
 #### Example
 
 ```def
-   axios
-  .put(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/random/1`)
+  axios
+  .put(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/random/1`, {
+    price:"44"
+    description : 'Lorem Lorem Ipsum is simply dummy text of the printing and'
+  })
   .then(({ data }) => {
     console.log(data);
   })
@@ -257,7 +261,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ```def
     axios
-  .put(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/${category}/${id}`)
+  .put(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/${category}/${id}`,{body})
   .then(({ data }) => {
     console.log(data);
   })
@@ -273,8 +277,11 @@ you know(fetch API, Axios, jquery ajax,...)
 #### Example
 
 ```def
-   axios
-  .put(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/electronics/1`)
+  axios
+  .put(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/electronics/1`,  {
+    price:"44
+    description : Lorem Lorem Ipsum is simply dummy text of the printing and'
+  })
   .then(({ data }) => {
     console.log(data);
   })
