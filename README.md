@@ -55,7 +55,7 @@ you know(fetch API, Axios, jquery ajax,...)
 `````
 
 
-####  2- get random products by language and category
+####  2- get  products by language and category
 
 ```def
     axios
@@ -89,7 +89,7 @@ you know(fetch API, Axios, jquery ajax,...)
 ```
 
 
-#### 3- get random product id
+#### 3- get random product by id
 
 ```def
     axios
@@ -121,7 +121,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 
 
-#### 4- get category product id
+#### 4- get category product by id
 
 ```def
     axios
@@ -155,7 +155,7 @@ you know(fetch API, Axios, jquery ajax,...)
 ### delete
 #### Note it will not delete from database but return the deleted product and the list without that product
 
-#### 1- delete random product id
+#### 1- delete random product by id
 
 ```def
     axios
@@ -187,7 +187,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 
 
-#### 2- delete category product id
+#### 2- delete category product by id
 
 ```def
     axios
@@ -221,7 +221,7 @@ you know(fetch API, Axios, jquery ajax,...)
 ### update
 #### Note it will not update from database but return the updated product and the list with updated product
 
-#### 1- update random product id
+#### 1- update random product by id
 
 ```def
     axios
@@ -257,7 +257,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 
 
-#### 2- update category product id
+#### 2- update category product by id
 
 ```def
     axios
