@@ -14,7 +14,7 @@
   - you can practise  get , delete , update  
   - supporting Arabic and English
  # 
-### https://fake-products-dynamic-api.herokuapp.com/
+### https://fake-products-dynamic-api.herokuapp.com/api/en/products/random
 
 #### you can fetch data with any kind of methods 
 you know(fetch API, Axios, jquery ajax,...)
