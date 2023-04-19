@@ -14,7 +14,7 @@
   - you can practise  get , delete , update  
   - supporting Arabic and English
  # 
-### https://fake-products-dynamic-api.herokuapp.com/api/en/products/random
+### https://produacts-api.onrender.com/api/en/products/random
 
 #### you can fetch data with any kind of methods 
 you know(fetch API, Axios, jquery ajax,...)
@@ -26,7 +26,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 `````def
    axios
-  .get(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/random`)
+  .get(`https://produacts-api.onrender.com/api/${language}/products/random`)
   .then(({ data }) => {
     console.log(data);
   })
@@ -45,7 +45,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 `````def
     axios
-  .get(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/random`)
+  .get(`https://produacts-api.onrender.com/api/en/products/random`)
   .then(({ data }) => {
     console.log(data);
   })
@@ -59,7 +59,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ```def
     axios
-  .get(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/${category}`)
+  .get(`https://produacts-api.onrender.com/api/${language}/products/${category}`)
   .then(({ data }) => {
     console.log(data);
   })
@@ -79,7 +79,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ```def
    axios
-  .get(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/electronics`)
+  .get(`https://produacts-api.onrender.com/api/en/products/electronics`)
   .then(({ data }) => {
     console.log(data);
   })
@@ -93,7 +93,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ```def
     axios
-  .get(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/random/${id}`)
+  .get(`https://produacts-api.onrender.com/api/${language}/products/random/${id}`)
   .then(({ data }) => {
     console.log(data);
   })
@@ -110,7 +110,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ```def
    axios
-  .get(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/random/1`)
+  .get(`https://produacts-api.onrender.com/api/en/products/random/1`)
   .then(({ data }) => {
     console.log(data);
   })
@@ -125,7 +125,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ```def
     axios
-  .get(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/${category}/${id}`)
+  .get(`https://produacts-api.onrender.com/api/${language}/products/${category}/${id}`)
   .then(({ data }) => {
     console.log(data);
   })
@@ -142,7 +142,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ```def
    axios
-  .get(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/electronics/1`)
+  .get(`https://produacts-api.onrender.com/api/en/products/electronics/1`)
   .then(({ data }) => {
     console.log(data);
   })
@@ -159,7 +159,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ```def
     axios
-  .delete(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/random/${id}`)
+  .delete(`https://produacts-api.onrender.com/api/${language}/products/random/${id}`)
   .then(({ data }) => {
     console.log(data);
   })
@@ -176,7 +176,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ```def
    axios
-  .delete(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/random/1`)
+  .delete(`https://produacts-api.onrender.com/api/en/products/random/1`)
   .then(({ data }) => {
     console.log(data);
   })
@@ -191,7 +191,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ```def
     axios
-  .delete(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/${category}/${id}`)
+  .delete(`https://produacts-api.onrender.com/api/${language}/products/${category}/${id}`)
   .then(({ data }) => {
     console.log(data);
   })
@@ -208,7 +208,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ```def
    axios
-  .delete(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/electronics/1`)
+  .delete(`https://produacts-api.onrender.com/api/en/products/electronics/1`)
   .then(({ data }) => {
     console.log(data);
   })
@@ -243,7 +243,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ```def
   axios
-  .put(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/random/1`, {
+  .put(`https://produacts-api.onrender.com/api/en/products/random/1`, {
     price:"44",
     description : 'Lorem Lorem Ipsum is simply dummy text of the printing and'
   })
@@ -261,7 +261,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ```def
     axios
-  .put(`https://fake-products-dynamic-api.herokuapp.com/api/${language}/products/${category}/${id}`,{body})
+  .put(`https://produacts-api.onrender.com/api/${language}/products/${category}/${id}`,{body})
   .then(({ data }) => {
     console.log(data);
   })
@@ -278,7 +278,7 @@ you know(fetch API, Axios, jquery ajax,...)
 
 ```def
   axios
-  .put(`https://fake-products-dynamic-api.herokuapp.com/api/en/products/electronics/1`,  {
+  .put(`https://produacts-api.onrender.com/api/en/products/electronics/1`,  {
     price:"44",
     description : 'Lorem Lorem Ipsum is simply dummy text of the printing and'
   })
